@@ -1,6 +1,7 @@
 .nav {
     display: flex;
-
+    padding-left: 30px;
+    margin-bottom: 30px;
 }
 
 .bars ul {
@@ -31,8 +32,8 @@ body {
 
 .profile-container {
     display: flex;
-    width: 400px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     border: red solid 5px;
     justify-content: center;
     flex-direction: column;
@@ -40,8 +41,8 @@ body {
 }
 
 .profile {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
     border-radius: 50%;
 }
@@ -51,9 +52,22 @@ body {
     font-size: 25px;
 }
 
+.dev {
+    text-align: center;
+    line-height: 35px;
+}
+
 .information {
     width: 700px;
     height: 300px;
     border: yellow solid 5px;
 }
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
 
