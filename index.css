@@ -1,43 +1,62 @@
+body {
+    background-color: rgb(235, 243, 250);
+}
+
 .nav {
     display: flex;
-    padding-left: 30px;
+    padding-top: 20px;
+    padding-left: 100px;
     margin-bottom: 30px;
 }
 
 .bars ul {
     display: flex;
     list-style: none;
+    padding: 0; 
+}
+
+.bars ul li {
+    display: flex;
+    align-items: center;
+    color: #333; 
 }
 
 .bars ul li a {
-    color: blue;
+    color: #007bff;
     text-decoration: underline;
 }
 
 .bars ul li a.current {
-    color: rgb(85, 77, 77);
+    color: #6c757d;
     text-decoration: none; 
-}
-
-body {
-    border: green solid 5px;
+    pointer-events: none; 
 }
 
 .contain {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
 }
 
 .profile-container {
     display: flex;
     width: 350px;
-    height: 450px;
-    border: red solid 5px;
+    height: 430px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+    transform: translateY(-5);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); 
 }
 
 .profile {
@@ -57,17 +76,184 @@ body {
     line-height: 35px;
 }
 
-.information {
-    width: 700px;
-    height: 300px;
-    border: yellow solid 5px;
-}
-
 .btns {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 10px;
+}
+
+.follow, .message {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: blue 1px solid;
+}
+
+.follow {
+    color: white;
+    background-color: blue;
+}
+.message {
+    color: blue;
+    background-color: white;
+}
+
+.information {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.information:hover {
+    transform: translateY(-5);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); 
+}
+
+.fullname-container, .email-container, .phone-container {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    border-bottom: gray 1px solid;
+}
+
+.address-container {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.website-link, .github-link, .facebook-link {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    gap: 50px;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.accounts {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 350px;
     gap: 30px;
 }
+
+.accounts:hover {
+    transform: translateY(-5);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); 
+}
+
+.portfolio, .git, .fb, .pic {
+    width: 50px;
+    height: 50px;
+}
+
+.deco {
+    text-decoration: none;
+    color: rgb(90, 89, 89);
+    font-size: 14px;
+}
+
+.achievements {
+    width: 600px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievements:hover {
+    transform: translateY(-5);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); 
+}
+
+.archie {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.achi1, .achi2 {
+    width: 600px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sta, .security, .club, .innovator {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 290px;
+    height: 60px;
+    gap: 15px;
+    border-radius: 10px;
+    border: gray solid 1px;
+}
+
+.security, .innovator {
+    margin-left: 30px;
+}
+
+.sta-pic {
+    width: 40px;
+    height: 40px;
+}
+
+.sta p, .security p, .club p, .innovator p {
+    margin: 0;
+    padding: 0;
+}
+
+.sta1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.title {
+    font-size: 17px;
+    font-weight: bold;
+}
+.description {
+    color: rgb(75, 75, 75);
+}
+
 
 
